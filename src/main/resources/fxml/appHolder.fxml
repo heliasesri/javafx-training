@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" >
+    <BorderPane fx:id="borderPane">
+        <top>
+            <Text fx:id="txtTitle" text="Text" textAlignment="CENTER" BorderPane.alignment="CENTER">
+            <font>
+               <Font name="Courier New Bold Italic" size="19.0" />
+            </font></Text>
+        </top>
+      <center>
+         <StackPane fx:id="paneApp" BorderPane.alignment="CENTER" />
+      </center>
+      <bottom>
+         <StackPane BorderPane.alignment="CENTER">
+            <children>
+               <Button onAction="#openApp" mnemonicParsing="false" text="Button" />
+            </children>
+         </StackPane>
+      </bottom>
+    </BorderPane>
+   <padding>
+      <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+   </padding>
+</StackPane>
