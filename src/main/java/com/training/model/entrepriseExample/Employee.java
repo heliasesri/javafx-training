@@ -1,4 +1,4 @@
-package com.mycompany.model.entrepriseExample;
+package com.training.model.entrepriseExample;
 
 public class Employee extends Person implements Function {
 

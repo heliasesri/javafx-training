@@ -1,4 +1,4 @@
-package com.mycompany.app;
+package com.training.app;
 
 import com.esri.arcgisruntime.mapping.ArcGISMap;
 import com.esri.arcgisruntime.mapping.Basemap;

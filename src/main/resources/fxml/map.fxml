@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.esri.arcgisruntime.mapping.view.*?>
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.esri.arcgisruntime.mapping.view.MapView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.StackPane?>
+<StackPane fx:id="stackPaneID" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal"
+           xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.training.map.src.MapController">
 
-<StackPane fx:id="stackPaneID" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.map.MapController">
-   <Button fx:id="myButton" onAction="#openFileDialog" mnemonicParsing="false" text="Button" StackPane.alignment="BOTTOM_RIGHT" visible="false" >
-      <StackPane.margin>
-         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"  />
-      </StackPane.margin>
-   </Button>
-    <StackPane >
+    <Button fx:id="myButton" onAction="#openFileDialog" mnemonicParsing="false" text="Button"
+            StackPane.alignment="BOTTOM_RIGHT" visible="false">
+        <StackPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+        </StackPane.margin>
+    </Button>
+    <StackPane>
         <children>
-            <MapView  fx:id="mapView"/>
+            <MapView fx:id="mapView"/>
         </children>
     </StackPane>
+
 </StackPane>

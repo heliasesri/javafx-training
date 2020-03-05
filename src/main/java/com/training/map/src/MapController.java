@@ -1,8 +1,6 @@
-package com.mycompany.map;
+package com.training.map.src;
 
 
-import com.esri.arcgisruntime.mapping.ArcGISMap;
-import com.esri.arcgisruntime.mapping.Basemap;
 import com.esri.arcgisruntime.mapping.view.MapView;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -34,7 +32,6 @@ public class MapController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         mapAppModel = new MapAppModel();
         mapAppModel.setupMapView(mapView);
-
 
         myButton.toFront();
     }

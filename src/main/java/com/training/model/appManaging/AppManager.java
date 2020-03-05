@@ -1,4 +1,4 @@
-package com.mycompany.model.appManaging;
+package com.training.model.appManaging;
 
 import javafx.fxml.FXMLLoader;
 

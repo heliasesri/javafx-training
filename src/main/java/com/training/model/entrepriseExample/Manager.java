@@ -1,4 +1,4 @@
-package com.mycompany.model.entrepriseExample;
+package com.training.model.entrepriseExample;
 
 
 import java.util.List;

@@ -1,0 +1,22 @@
+{
+    "category": "Map",
+    "description": "Esri map.",
+    "ignore": false,
+    "images": [
+        "FindPlace.png"
+    ],
+    "keywords": [
+        "Map"
+    ],
+
+    "relevant_apis": [
+        "Map"
+    ],
+    "snippets": [
+        "src/MapApp.java",
+        "src/MapAppController.java",
+        "src/MapAppModel.java",
+        "../../resources/fxml/map.fxml"
+    ],
+    "title": "Map test"
+}

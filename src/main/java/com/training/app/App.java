@@ -14,7 +14,7 @@
  * under the License.
  */
 
-package com.mycompany.app;
+package com.training.app;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -24,8 +24,6 @@ import javafx.stage.Stage;
 import com.esri.arcgisruntime.mapping.ArcGISMap;
 import com.esri.arcgisruntime.mapping.Basemap;
 import com.esri.arcgisruntime.mapping.view.MapView;
-
-import java.net.URL;
 
 public class App extends Application {
 

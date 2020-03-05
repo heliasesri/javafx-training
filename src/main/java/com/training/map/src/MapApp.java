@@ -1,4 +1,4 @@
-package com.mycompany.map;
+package com.training.map.src;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

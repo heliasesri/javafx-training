@@ -1,4 +1,4 @@
-package com.mycompany.map;
+package com.training.map.src;
 
 import com.esri.arcgisruntime.concurrent.ListenableFuture;
 import com.esri.arcgisruntime.data.Feature;
@@ -16,9 +16,7 @@ import com.esri.arcgisruntime.mapping.view.MapView;
 import javafx.geometry.Point2D;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
-import javafx.scene.control.ListView;
 import javafx.scene.input.MouseButton;
-import javafx.scene.layout.GridPane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
@@ -35,12 +33,11 @@ public class MapAppModel {
     private List<FeatureLayer> featureLayers = new ArrayList<FeatureLayer>();
 
     public MapAppModel() {
-
-        System.out.println("I HAVE A EMPTY MAP AND EMPTY MAPVIEW");
-
+        System.out.println("MapAppModel: constructor");
     }
 
     private void setMapListener() {
+        System.out.println("MapAppModel: setMapListener");
         mapView.setOnMouseClicked(event -> {
             // check for primary or secondary mouse click
             if (event.isStillSincePress() && event.getButton() == MouseButton.PRIMARY) {
@@ -49,7 +46,6 @@ public class MapAppModel {
                     featureLayer.clearSelection();
                 });
 
-                // create a point from where the user clicked
                 Point2D point = new Point2D(event.getX(), event.getY());
 
                 for (FeatureLayer featureLayer : featureLayers) {
@@ -118,7 +114,9 @@ public class MapAppModel {
     }
 
     private void setupMap() {
+        System.out.println("MapAppModel: setupMap");
         if (mapView != null) {
+            System.out.println("MapAppModel: setupMap - mapview!= null");
             Basemap.Type basemapType = Basemap.Type.IMAGERY;
             double latitude = 50.46;
             double longitude = 4.46;

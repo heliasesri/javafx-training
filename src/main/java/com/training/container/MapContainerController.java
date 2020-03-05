@@ -1,4 +1,4 @@
-package com.mycompany.container;
+package com.training.container;
 
 
 import javafx.fxml.FXML;
@@ -7,7 +7,6 @@ import javafx.scene.Node;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
-import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
 
 import java.net.URL;
@@ -38,11 +37,11 @@ public class MapContainerController implements Initializable {
         int size = grdApplications.getChildren().size();
         System.out.println(size);
         int numberOfRow = size / 4;
-        int numberOfColumn = size  % 4;
+        int numberOfColumn = size % 4;
 
-        System.out.println(numberOfRow +" " + numberOfColumn);
+        System.out.println(numberOfRow + " " + numberOfColumn);
 
-        grdApplications.add(gridElement,numberOfColumn,numberOfRow );
+        grdApplications.add(gridElement, numberOfColumn, numberOfRow);
 
 
 //        if(grdApplications.getChildren().size() / 3 )

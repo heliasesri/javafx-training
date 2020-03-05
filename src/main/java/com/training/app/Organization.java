@@ -14,11 +14,11 @@
  * under the License.
  */
 
-package com.mycompany.app;
+package com.training.app;
 
 
-import com.mycompany.model.entrepriseExample.Employee;
-import com.mycompany.model.entrepriseExample.Manager;
+import com.training.model.entrepriseExample.Employee;
+import com.training.model.entrepriseExample.Manager;
 
 import java.util.ArrayList;
 import java.util.List;
